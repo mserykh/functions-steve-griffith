@@ -24,11 +24,13 @@ function drink_pop() {
     console.log(account_balance);
 }
 
-drink_beer();
-drink_pop();
-drink_pop();
-eat_burger();
-drink_beer();
-drink_pop();
-drink_pop();
-eat_burger();
+//visit the carnival, eat, and drink
+var mealList = [drink_beer, drink_pop, eat_burger, drink_beer, eat_burger];
+    function visitCarnival(mList, msg) {
+        for (var i=0, num = mList.length; i < num; i++)  {
+            //mList[i]();
+            mList[i].call();
+            console.log(msg[i]);
+        }
+}
+visitCarnival(mealList, "Hello!");
