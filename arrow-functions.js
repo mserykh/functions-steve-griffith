@@ -20,3 +20,8 @@ let bigA = numbers.filter( item => item > 300);
 
 console.log(big);
 console.log(bigA);
+names.forEach( function(item, index){
+    console.log( index, item);
+});
+
+names.forEach( (item, index) => console.log( index, item ));
