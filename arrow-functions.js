@@ -25,3 +25,16 @@ names.forEach( function(item, index){
 });
 
 names.forEach( (item, index) => console.log( index, item ));
+
+//Tips and Gotchas for Arrow Functions
+
+let retVal = 42;
+let obj = {'prop1': 'foo', 'prop2': 'bar'};
+
+//1. One parameter, with and without curly braces
+const f1 = (param) => param;
+const f2 = param => param;
+
+//2. No parameters
+
+//3. Returning objects
